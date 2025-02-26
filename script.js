@@ -1,8 +1,8 @@
-// const button = document.getElementById("select-breed");
-
-// if(button){
-//     button.addEventListener("click", displayImages)
-// }
+document.addEventListener("mousemove", (event) => {
+    const cursorCircle = document.getElementById("cursor-circle");
+    cursorCircle.style.left = `${event.pageX}px`;
+    cursorCircle.style.top = `${event.pageY}px`;
+});
 
 async function displayImages(){
     const selectedBreed = document.getElementById("breed").value;

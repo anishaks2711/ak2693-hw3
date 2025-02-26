@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    /* text-align: center; */
     background-color: #ffdcdc;
 }
 .container{
@@ -22,7 +21,6 @@ body {
     article{
         grid-column-start: 1;
         grid-column-end: 4;
-        /* justify-content: ; */
     }
 }
 
@@ -33,10 +31,6 @@ body {
     width: 80%;
     margin:auto;
     align-items: center; 
-    
-    .img-item{
-        /* justify-self: s */
-    }
 
     .img-item:nth-child(1) { grid-column: 1; } /* Item 1 in Column 1 */
     .img-item:nth-child(2) { grid-column: 2; } /* Item 2 in Column 2 */
@@ -64,4 +58,17 @@ button:hover {
         font-style: italic;
         font-size: small;
     }
+}
+
+#cursor-circle {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(247, 141, 141, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    left:0;
+    pointer-events: none; 
+    transform: translate(-50%, -50%); 
+    transition: transform 0.1s linear; 
 }
