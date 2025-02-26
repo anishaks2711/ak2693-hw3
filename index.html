@@ -3,10 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Homepage</title>
+    <title>Anisha</title>
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
-    <h1>Welcome to My Personal Homepage</h1>
-    <p>This is my Building Startup Systems HW3 assignment.</p>
+    <script src="script.js"></script>
+
+    <div class="container">
+        <h1>About me</h1>
+        <img src="dp.jpeg" class="circle-img" alt="My pic"/>
+        <article>
+        <p>
+            Hi! My name is Anisha, and I'm a passionate frontend developer who loves crafting beautiful, intuitive, and responsive web experiences. 
+            With a keen eye for design and a strong foundation in coding, I enjoy bringing creative ideas to life through clean and efficient code.
+        </p>
+        
+        <p>
+            Beyond my love for web development, I have a deep appreciation for animals—especially dogs! Whether it's spending time with furry friends 
+            or learning more about animal care, they hold a special place in my heart.
+        </p>
+        
+        <p>
+            When I'm not coding, you'll likely find me indulging in my favorite hobbies, baking delicious treats and dancing to my favorite beats. 
+            Baking allows me to experiment with flavors and create something delightful, while dancing gives me the freedom to express myself and stay active. 
+            Both bring joy and balance to my life.
+        </p>
+        </article>
+    </div>
+
+    <div>
+        <label for="breed">Choose a Dog breed:</label>
+
+        <select name="breed" id="breed">
+
+            <option value="bulldog">Bulldog</option>
+            <option value="boxer">Boxer</option>
+            <option value="collie">Collie</option>
+            <option value="corgi">Corgi</option>
+            <option value="dane">Dane</option>
+            <option value="doberman">Doberman</option>
+            <option value="eskimo">Eskimo</option>
+            <option value="husky">Husky</option>
+            <option value="malamute">Malamute</option>
+            <option value="maltese">Maltese</option>
+            <option value="mastiff">Mastiff</option>
+            <option value="pomeranian">Pomeranian</option>
+            <option value="rajapalayam">Rajapalayam</option>
+            <option value="spaniel">Spaniel</option>
+            <option value="terrier">Terrier</option>
+            <option value="wolfhound">Wolfhound</option>
+
+        </select>
+
+        <button id="select-breed" onclick="displayImages()">Fetch Dog pictures</button>
+    </div>
+
+    <div id="image-container"></div>
 </body>
 </html>

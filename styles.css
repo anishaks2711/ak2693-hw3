@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    /* text-align: center; */
+    background-color: #ffdcdc;
+}
+.container{
+    display: grid;
+    grid-template-columns:repeat(5, 20% [col-start]);;
+
+    .circle-img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        grid-column: 5;
+        justify-self: end;
+    }
+
+    article{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        /* justify-content: ; */
+    }
+}
+
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(4, 25% [col-start]);
+    .img-item{
+        /* justify-self: s */
+    }
+}
