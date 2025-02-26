@@ -27,8 +27,8 @@ async function displayImages(){
                 const img = document.createElement("img");
                 img.src = url;
                 img.alt = selectedBreed;
-                img.style.maxWidth = "300px";  
-                img.style.maxHeight = "300px";
+                img.style.width = "100%";  
+                img.style.height = "auto";
                 img.className = "img-item";
                 imgContainer.appendChild(img);           
             });
